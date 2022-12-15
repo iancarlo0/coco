@@ -9,7 +9,7 @@ return(
 
     <img src={coctel1} alt="..."/>
 
-      </div>
+    </div>
 
 )
 

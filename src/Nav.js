@@ -1,4 +1,5 @@
 import logo from './assets/drink.svg';
+import menu from './assets/menu.svg';
 
 
 
@@ -16,7 +17,7 @@ return(
 
     <label for="menu" class="nav__label">
 
-        <img src="assets/menu.svg" alt="nav__img"/>
+        <img src={menu}/>
 
     </label>
 

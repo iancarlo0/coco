@@ -1,6 +1,6 @@
 import Nav from './Nav';
 import Cab from './Cabecera';
-import Carta from './Carta';
+import Categorias from './Categorias';
 import './css/main.css';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
 <>
 <Nav />
 <Cab />
-<Carta />
+<Categorias />
 </>
     
   ) 
