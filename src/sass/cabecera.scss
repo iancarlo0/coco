@@ -1,0 +1,65 @@
+
+.cabecera{
+    position: relative;
+    height: 89vh;
+    margin-top: 5rem;
+    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+    @media screen and (max-width: 600px){
+        height: 60vh;
+        clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+   }
+   img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+   }
+   .COCOKTAIL{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 10rem;
+    font-weight: 600;
+
+    -webkit-text-stroke: 4px #fff;/*borde blanco*/
+
+    background-image: linear-gradient(#fff,#fff);/*cuadro blanco*/
+    background-repeat: no-repeat;
+    /*letras*/
+    background-clip: text;
+   -webkit-background-clip: text;
+    color: transparent;
+    /*relleno*/
+    background-position: -975px 0;/*inicio de relleno*/
+    animation: backcolor 3s linear infinite alternate;
+   //aqui
+        @media screen and (max-width: 1000px){
+            -webkit-text-stroke: 3px #fff;/*borde blanco*/
+            font-size: 7rem;   
+        }
+
+        @media screen and (max-width: 750px){
+            -webkit-text-stroke: 2px #fff;/*borde blanco*/
+            font-size: 5rem;  
+        }
+
+        @media screen and (max-width: 500px){
+            -webkit-text-stroke: 1px #fff;/*borde blanco*/
+            font-size: 4rem;
+        }
+    }
+    @keyframes backcolor{
+        100%{
+            background-position: 0 0;
+        }
+    }
+
+}
+
+
+
