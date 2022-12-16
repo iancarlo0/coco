@@ -1,4 +1,4 @@
-import barra from './img/barra.jpg';
+import barra from '../img/barra.jpg';
 
 
 function cabecera(){

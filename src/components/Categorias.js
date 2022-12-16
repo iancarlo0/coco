@@ -33,7 +33,6 @@ function Categorias(){
             return(
                     <div key={x.ObjectId} class="card">
                         <Categoria cart={x}  />
-
                     </div>
                  )
 

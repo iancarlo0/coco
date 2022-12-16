@@ -4,7 +4,7 @@ function cardcont(prop){
     const cart = prop.cart;
 
     return(
-    <div clss="card-context">
+    <div class="card-context">
        <div class="dark-bg"></div>
             <h2>{cart.title}</h2>
         <p>

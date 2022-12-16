@@ -1,7 +1,8 @@
-import logo from './assets/drink.svg';
-import menu from './assets/menu.svg';
+import logo from '../assets/drink.svg';
+import menu from '../assets/menu.svg';
+import NavItem from './NavItems';
 
-
+const elements = ["Home","Categorias","Algo","Contacto"];
 
 function Nav(){
 return(
@@ -23,12 +24,18 @@ return(
 
     <input type="checkbox" id="menu" class="nav__input"/>
     
+
+
     <div class="nav__menu">
-        <a href="#" class="nav__item">Home</a>
-        <a href="#" class="nav__item">Categorías</a>
-        <a href="#" class="nav__item">Algo</a>
-        <a href="#" class="nav__item">contacto</a>
-    </div>
+
+        {elements.map(function(elemento){
+          return(
+          <NavItem item={elemento} />
+          );
+                }
+             )
+        }
+     </div>
 
 </div>
 </header>
